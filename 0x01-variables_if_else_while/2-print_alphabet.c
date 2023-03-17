@@ -11,7 +11,14 @@ int main(void)
 
 	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		putchar(letter);
+		if (letter == 'z')
+		{
+			putchar(letter\n);
+		}
+		else
+		{
+			putchar(letter);
+		}
 	}
 	return (0);
 }
