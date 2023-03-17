@@ -13,6 +13,8 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	int lst;
+
 	lst = n % 10;
 
 	if (lst > 5)
