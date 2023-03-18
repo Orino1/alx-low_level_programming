@@ -14,10 +14,10 @@ int main(void)
 		if (letterLower != 'e' && letterLower != 'q' && letterLower != 'z')
 		{
 			putchar(letterLower);
-		}
-		else if (letterLower != 'e' && letterLower != 'q' && letterLower == 'z')
-		{
-			putchar('\n');
+			if (letterLower == 'z')
+			{
+				putchar('\n');
+			}
 		}
 	}
 	return (0);
