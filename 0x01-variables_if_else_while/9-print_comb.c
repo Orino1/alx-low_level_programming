@@ -18,6 +18,10 @@ int main(void)
 		putchar(',');
 		putchar(' ');
 		}
+		else if (num == 9)
+		{
+		putchar('\n');
+		}
 	}
 	return (0);
 }
