@@ -26,10 +26,6 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				else if (numFirst == 89)
-				{
-					putchar('\n');
-				}
 			}
 		}
 		stepdownum++;
