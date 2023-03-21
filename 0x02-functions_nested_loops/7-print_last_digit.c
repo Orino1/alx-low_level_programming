@@ -1,14 +1,25 @@
 #include "main.h"
 
 /**
- * _abs - A function function that
+ * print_last_digit - A function function that
  * prints the last digit of a number.
  * @n: is a number
- * Return: n or sum
+ * Return: lastn
  */
 int print_last_digit(int n)
 {
-	int lastn = n % 10;
+	if (n < 0)
+	{
+		int pos = n * -1;
 
-	return (lastn);
+		int lastn = pos % 10;
+
+		return (lastn);
+	}
+	else
+	{
+		int lastn = n % 10;
+
+		return (lastn);
+	}
 }
