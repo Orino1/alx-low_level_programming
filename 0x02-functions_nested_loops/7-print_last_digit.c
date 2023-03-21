@@ -14,12 +14,12 @@ int print_last_digit(int n)
 
 		int lastn = pos % 10;
 
-		return (lastn);
+		return (lastn, lastn);
 	}
 	else
 	{
 		int lastn = n % 10;
 
-		return (lastn);
+		return (lastn, lastn);
 	}
 }
