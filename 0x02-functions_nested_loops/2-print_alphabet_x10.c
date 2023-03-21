@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet-x10 A function that prints From a to z
+ * print_alphabet-x10 - A function that prints From a to z
  * 10x followed by a new line
  * Return: Always 0 (Success)
  */
