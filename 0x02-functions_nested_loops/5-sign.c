@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - A function function that 
+ * print_sign - A function function that
  * prints the sign of a number.
  * @n: is a iether a variable or degit
  * Return: 1 mean + 0 mean 0 -1 mean - sign
