@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - A function that check if c
+ * _isalpha - A function that check if c
  * is lowercase or uppercase char
  * @c: is a iether a variable or degit
  * Return: Always 0 (Success)
