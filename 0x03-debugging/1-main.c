@@ -2,7 +2,6 @@
 
 /**
 * main - causes an infinite loop
-* @\\o/\n: this is just a symbl
 * Return: 0
 */
 
