@@ -14,13 +14,13 @@ void print_to_98(int n)
 	{
 		for (n = inputnm; n >= 98; n--)
 		{
-			if(n != 98)
+			if (n != 98)
 			{
-				printf("%d, ",n);
+				printf("%d, ", n);
 			}
 			else
 			{
-				printf("%d\n",n);
+				printf("%d\n", n);
 			}
 		}
 	}
@@ -28,13 +28,13 @@ void print_to_98(int n)
 	{
 		for (n = inputnm; n <= 98; n++)
 		{
-			if(n != 98)
+			if (n != 98)
 			{
-				printf("%d, ",n);
+				printf("%d, ", n);
 			}
 			else
 			{
-				printf("%d\n",n);
+				printf("%d\n", n);
 			}
 		}
 	}
