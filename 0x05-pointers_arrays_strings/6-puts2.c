@@ -19,12 +19,12 @@ void puts2(char *str)
 	}
 	for (i = 0; i <= leng; i++)
 	{
-		if (onf == 0)
+		if (onf == 0 && (str[i] != '\0'))
 		{
 			_putchar(str[i]);
 			onf++;
 		}
-		else if (onf == 1)
+		else if (onf == 1 && (str[i] != '\0'))
 		{
 			onf--;
 		}
