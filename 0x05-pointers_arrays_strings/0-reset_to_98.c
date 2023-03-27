@@ -3,6 +3,7 @@
  * reset_to_98 - function that take a pointer
  * and chane the value of the
  * vr that it points to to 98
+ * @n: is a pointer
  * Return: void
  */
 void reset_to_98(int *n)
