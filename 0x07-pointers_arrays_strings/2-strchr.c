@@ -1,10 +1,11 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - Write a function that locates a
  * character in a string
  * @s: pointer to string
  * @c: char
- * Return: pointer dest
+ * Return: pointer to the first occ of c in s
  */
 char *_strchr(char *s, char c)
 {
