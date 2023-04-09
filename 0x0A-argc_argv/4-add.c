@@ -14,11 +14,11 @@ int main(int argc, char *argv[])
 	{
 		int i, j = 0;
 
+		int c;
+
 		for (i = 1; i < argc; i++)
 		{
-			int c;
-
-			for (int c = 0; argv[i][c] != '\0'; c++)
+			for (c = 0; argv[i][c] != '\0'; c++)
 			{
 				if (!isdigit(argv[i][c]))
 				{
