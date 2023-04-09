@@ -10,13 +10,13 @@
  */
 int main(int argc, char const *argv[])
 {
+	int sum = atoi(argv[1]) * atoi(argv[2]);
+
 	if (argc != 3)
 	{
 		printf("Error");
 		return (1);
 	}
-	int sum = atoi(argv[1]) * atoi(argv[2]);
-
 	printf("%d\n", sum);
 	return (0);
 }
