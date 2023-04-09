@@ -17,10 +17,8 @@ int main(int argc, char *argv[])
 	int cents[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
-	{
 		printf("Error\n");
-		return(1);
-	}
+		return (1);
 	else if (atoi(argv[1]) < 0)
 	{
 		printf("0\n");
