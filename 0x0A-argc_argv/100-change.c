@@ -12,6 +12,8 @@ int main(int argc, char *argv[])
 {
 	int i, j, stp = 0;
 
+	int sum = 0;
+
 	int cents[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
@@ -27,8 +29,6 @@ int main(int argc, char *argv[])
 	else if (argc == 2)
 	{
 		int baki = atoi(argv[1]);
-
-		int sum = 0;
 
 		for (i = 0; i < 5 && stp == 0; i++)
 		{
@@ -51,5 +51,4 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", sum);
 		return (0);
-	}
 }
