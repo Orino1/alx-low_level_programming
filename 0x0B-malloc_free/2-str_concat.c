@@ -24,6 +24,7 @@ char *str_concat(char *se, char *ss)
 	int i = lengo(se);
 	int j = lengo(ss);
 	int s = 0;
+	int n = 0;
 	char *p = NULL;
 
 	p = (char *) malloc((i + j + 1) * sizeof(char));
@@ -38,8 +39,9 @@ char *str_concat(char *se, char *ss)
 	}
 	while (s < (j + i))
 	{
-		p[s] = ss[s];
+		p[s] = ss[n];
 		s++;
+		n++;
 	}
 	p[s] = '\0';
 	return (p);
