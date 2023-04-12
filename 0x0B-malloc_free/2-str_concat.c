@@ -32,12 +32,12 @@ char *str_concat(char *se, char *ss)
 	{
 		return (NULL);
 	}
-	while (s < i)
+	while (s < i && se != NULL)
 	{
 		p[s] = se[s];
 		s++;
 	}
-	while (s < (j + i))
+	while (s < (j + i) && ss != NULL)
 	{
 		p[s] = ss[n];
 		s++;
