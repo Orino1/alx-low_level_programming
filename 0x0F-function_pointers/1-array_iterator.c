@@ -1,7 +1,5 @@
 #include "function_pointers.h"
-#define NULL 0
-#include <stdio.h>
-
+#include <stddef.h>
 
 /**
  * array_iterator -  a function that executes a function
@@ -12,7 +10,7 @@
  * Return: void
  **/
 
-void array_iterator(int *array, size, void (*action)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	unsigned int i;
 
