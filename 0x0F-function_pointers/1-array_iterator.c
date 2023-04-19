@@ -1,5 +1,7 @@
 #include "function_pointers.h"
 #define NULL 0
+#include <stdio.h>
+
 
 /**
  * array_iterator -  a function that executes a function
