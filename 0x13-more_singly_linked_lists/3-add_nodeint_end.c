@@ -11,7 +11,6 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	int i;
 	listint_t *created = malloc(sizeof(listint_t));
 	listint_t *temporary = malloc(sizeof(listint_t));
 
