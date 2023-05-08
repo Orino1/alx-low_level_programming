@@ -5,6 +5,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include "main.h"
+#include <string.h>
 
 int create_file(const char *filename, char *text_content)
 {
@@ -22,7 +23,7 @@ int create_file(const char *filename, char *text_content)
 	if (text_content != NULL) {
 		len = strlen(text_content);
  		bytes_written = write(fd, text_content, len);
-		if (bytes_written == -1 || (size_t)bytes_written != len) {
+		if (bytes_written == -1 || bytes_written != len) {
 			close(fd);
 			return (-1);
 		}
