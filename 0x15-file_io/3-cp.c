@@ -17,7 +17,6 @@
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, nread;
-
 	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
@@ -38,17 +37,19 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	while ((nread = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+	{
 		if (write(fd_to, buffer, nread) != nread)
+		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
+		}
+	}
 	if (nread == -1)
+	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
-	if (close(fd_from) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
-		exit(100);
-	if (close(fd_to) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
-		exit(100);
+	}
+	close(fd_from);
+	close(fd_to);
 	return (0);
 }
