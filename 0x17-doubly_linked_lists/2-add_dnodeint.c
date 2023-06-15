@@ -7,7 +7,7 @@
  * a dlistint_t list.
  * @head: pointer to the head of the linked list
  * @n: n element to be added to the new node
- * Return: Number of nodes in the list
+ * Return: the adress of the new node
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
