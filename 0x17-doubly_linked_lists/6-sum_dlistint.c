@@ -18,6 +18,7 @@ int sum_dlistint(dlistint_t *head)
 		return (NULL);
 	}
 	corrent_node = head;
+	result = 0;
 	for (i = 0; corrent_node != NULL; i++)
 	{
 		result += corrent_node->n;
