@@ -15,7 +15,7 @@ int sum_dlistint(dlistint_t *head)
 
 	if (head == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 	corrent_node = head;
 	result = 0;
